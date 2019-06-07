@@ -1,10 +1,14 @@
 import subprocess
+
+
 UTF8 = 'utf-8'
 
-'''
-Simple wrapper around popen
-'''
+
 def run_command(command):
+    '''
+    Simple wrapper around popen
+    '''
+
     command_parts = command.split()
     process = subprocess.Popen(command_parts, stdout=subprocess.PIPE)
 
